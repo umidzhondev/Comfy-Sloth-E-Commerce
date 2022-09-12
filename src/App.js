@@ -1,39 +1,36 @@
-import React, { Fragment } from "react";
-import {
-  BrowserRouter as Router,
-  Routers,
-  Route,
-  Routes,
-} from "react-router-dom";
-import { Navbar, SideBar, Footer } from "./components";
+import React, {Fragment} from 'react'
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {Navbar, Sidebar, Footer} from './components';
+
 import {
   Home,
-  Cart,
-  Error,
-  AuthWrapper,
-  About,
-  Checkout,
-  PrivateRoute,
   SingleProduct,
+  Cart,
+  Checkout,
+  Error,
+  About,
   Products,
-} from "./pages";
+  PrivateRoute,
+  AuthWrapper,
+} from './pages'
 
 function App() {
   return (
-    <Router>
-      <Fragment>
-        <Navbar />
-        <SideBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="*" element={<Error />} />
-        </Routes>
-        <Footer />
-      </Fragment>
-    </Router>
+     <Router>
+         <Fragment>
+            <Navbar/>
+          <Sidebar/> 
+             <Routes>
+               <Route path = '/' element={ <Home/> }/>
+               <Route path = '/about' element = { <About/> } />
+               <Route path = '/cart' element = { <Cart/> } />
+               <Route path = '/products' element = { <Products/> } />
+               <Route path = '/products/:id' element = { <SingleProduct/> } />
+               <Route path = '*' element = { <Error/> } />
+             </Routes>   
+             <Footer/>
+         </Fragment>
+     </Router>
   );
 }
 
