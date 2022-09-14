@@ -11,6 +11,7 @@ import Contact from './Contact';
 import Error from './Error';
 import Loading from './Loading';
 import Product from './Product';
+import ProductImage from './ProductImage';
 
 export {
     Navbar,
@@ -25,5 +26,6 @@ export {
     Contact, 
     Error,
     Loading,
-    Product
+    Product,
+    ProductImage
 }

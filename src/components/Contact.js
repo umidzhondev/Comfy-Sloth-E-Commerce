@@ -11,7 +11,7 @@ const Contact = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             veniam repudiandae vel ab id, fuga praesentium nobis natus ipsam
               </p>
-              <form className='contact-form'
+              <form className='contact-form' 
            action="https://formspree.io/f/mvoyznqp"
            method="POST"
               >
