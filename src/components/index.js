@@ -1,5 +1,5 @@
 import Navbar from './Navbar';
-import Sidebar from './SideBar';
+import Sidebar from './Sidebar';
 import Footer from './Footer';
 import PageHero from './PageHero';
 import StripeCheckout from './StripeCheckout';
@@ -11,7 +11,10 @@ import Contact from './Contact';
 import Error from './Error';
 import Loading from './Loading';
 import Product from './Product';
+import Stars from './Stars';
+import AddToCart from './AddToCart';
 import ProductImage from './ProductImage';
+import AmountButtons from './AmountButtons';
 
 export {
     Navbar,
@@ -27,5 +30,8 @@ export {
     Error,
     Loading,
     Product,
-    ProductImage
+    Stars,
+    AddToCart,
+    ProductImage,
+    AmountButtons
 }
